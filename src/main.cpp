@@ -14,13 +14,4 @@ int main() {
     std::cout << m_1;
     std::cout << std::setw(23) << "\x1b[41;3m=\x1b[m" << std::endl;
     std::cout << m + m_1;
-
-    std::cout << std::endl;
-    float values_1[] = {82, 58, 56, 97, 95, 78, 98, 21, 77, 69, 65, 24, 30, 6, 63, 3};
-    float values_2[] = {95, 22, 24, 39, 52, 41, 80, 71, 39, 65, 95, 97, 13, 12, 58, 18};
-    mat4x4 lhs_mat(values_1);
-    mat4x4 rhs_mat(values_2);
-    std::stringstream answer;
-    answer << (lhs_mat * rhs_mat);
-    std::cout << answer.str();
 }
